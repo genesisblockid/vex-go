@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/genesisblockid/vex-go/eoserr"
+	"github.com/genesisblockid/vex-go/vexerr"
 )
 
 // APIError represents the errors as reported by the server
@@ -19,7 +19,7 @@ type APIError struct {
 	} `json:"error"`
 }
 
-func NewAPIError(httpCode int, msg string, e eoserr.Error) *APIError {
+func NewAPIError(httpCode int, msg string, e vexerr.Error) *APIError {
 	newError := &APIError{
 		Code:    httpCode,
 		Message: msg,
