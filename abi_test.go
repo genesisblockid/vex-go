@@ -1094,7 +1094,7 @@ var testSystemABIRaw = `{
 /*
 
 `setabi` action data:
-account: 0000000000ea3055 eosio
+account: 0000000000ea3055 vexcore
 abi:
 00 types[]
 14 structs[]

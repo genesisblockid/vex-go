@@ -16,9 +16,9 @@ func ExamplePackedTransaction_Pack() {
 	txOpts := &eos.TxOptions{}
 	err := txOpts.FillFromChain(context.Background(), api)
 
-	// The actual account here instead of `eosio` must be the the account that has the public key
+	// The actual account here instead of `vexcore` must be the the account that has the public key
 	// associated with the private key below configure for 'active' level.
-	from := "eosio"
+	from := "vexcore"
 
 	// This is of course now a burnt key, never ever use it, it's for demo purpose and protecting your key is your responsibility
 	fromPrivateKey := "PVT_K1_2i6s2S8cxJw33zFuF3keAfUJjKSUJ53qVH7ac4veCuPVCpUSp"
@@ -31,12 +31,12 @@ func ExamplePackedTransaction_Pack() {
 
 	trx := eos.NewTransaction([]*eos.Action{
 		{
-			Account:       "eosio.token",
+			Account:       "vex.token",
 			Name:          "transfer",
 			Authorization: []eos.PermissionLevel{transferPermissionLevel},
 			ActionData: eos.NewActionData(&eos.Transfer{
 				From:     eos.AccountName(from),
-				To:       "eosio.token",
+				To:       "vex.token",
 				Quantity: transferQuantity,
 				Memo:     "Example action",
 			}),

@@ -17,7 +17,7 @@ import (
 )
 
 // MarshalerBinary is the interface implemented by types
-// that can marshal to an EOSIO binary description of themselves.
+// that can marshal to an VEXCORE binary description of themselves.
 //
 // **Warning** This is experimental, exposed only for internal usage for now.
 type MarshalerBinary interface {

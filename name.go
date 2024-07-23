@@ -43,7 +43,7 @@ func MustStringToName(s string) (val uint64) {
 }
 
 func StringToName(s string) (val uint64, err error) {
-	// ported from the eosio codebase, libraries/chain/include/eosio/chain/name.hpp
+	// ported from the vexcore codebase, libraries/chain/include/eosio/chain/name.hpp
 	var i uint32
 	sLen := uint32(len(s))
 	for ; i <= 12; i++ {
@@ -80,8 +80,8 @@ var base32Alphabet = []byte(".12345abcdefghijklmnopqrstuvwxyz")
 var eosioNameUint64 = uint64(6138663577826885632)
 var eosioTokenNameUint64 = uint64(6138663591592764928)
 var cachedNames = map[uint64]string{
-	6138663577826885632: "eosio",
-	6138663591592764928: "eosio.token",
+	6138663577826885632: "vexcore",
+	6138663591592764928: "vex.token",
 }
 
 func NameToString(in uint64) string {
@@ -90,7 +90,7 @@ func NameToString(in uint64) string {
 		return name
 	}
 
-	// ported from libraries/chain/name.cpp in eosio
+	// ported from libraries/chain/name.cpp in vexcore
 	a := []byte{'.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.', '.'}
 
 	tmp := in

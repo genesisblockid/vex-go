@@ -161,7 +161,7 @@ func TestSignaturePublicKeyExtraction(t *testing.T) {
 
 func TestEOSIOCSigningComparison(t *testing.T) {
 	// try with: ec sign -k 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3 '{"expiration":"2018-03-21T23:02:32","region":0,"ref_block_num":2156,"ref_block_prefix":1532582828,"packed_bandwidth_words":0,"context_free_cpu_bandwidth":0,"context_free_actions":[],"actions":[],"signatures":[],"context_free_data":[]}'
-	wif := "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3" // corresponds to: EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+	wif := "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3" // corresponds to: VEX6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
 	privKey, err := NewPrivateKey(wif)
 	require.NoError(t, err)
 
@@ -183,11 +183,11 @@ func TestEOSIOCSigningComparison(t *testing.T) {
 }
 
 func TestNodeosSignatureComparison(t *testing.T) {
-	wif := "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3" // corresponds to: EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+	wif := "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3" // corresponds to: VEX6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
 	privKey, err := NewPrivateKey(wif)
 	require.NoError(t, err)
 
-	// produce with `cleos create account eosio abourget EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+	// produce with `cleos create account eosio abourget VEX6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV VEX6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
 	// transaction:
 	// chainID + 30d3b35a0000be0194c22fe70000000000010000000000ea305500409e9a2264b89a010000000000ea305500000000a8ed32327c0000000000ea305500000059b1abe93101000000010002c0ded2bc1f1305fb0faac5e6c03ee3a1924234985427b6167ca569d13df435cf01000001000000010002c0ded2bc1f1305fb0faac5e6c03ee3a1924234985427b6167ca569d13df435cf0100000100000000010000000000ea305500000000a8ed323201000000
 	// hashes to:
@@ -229,7 +229,7 @@ func TestSignatureVerify_WA(t *testing.T) {
 	assert.Equal(t, true, sig.Verify(hash, pubKey))
 }
 
-//to do this here because of a import cycle when use eos.SigDigest
+// to do this here because of a import cycle when use eos.SigDigest
 func sigDigest(chainID, payload, contextFreeData []byte) []byte {
 	h := sha256.New()
 	if len(chainID) == 0 {

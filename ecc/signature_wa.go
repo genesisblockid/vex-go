@@ -42,7 +42,7 @@ func (s *innerWASignature) publicKey(content []byte, hash []byte) (out PublicKey
 	// still work for ECDSA P-256 curves.
 	//
 	// However, one remaining step is re-construction of the full WA public key material
-	// which contains more than just the X and Y points in the WA case on EOSIO. Indeed, the
+	// which contains more than just the X and Y points in the WA case on VEX. Indeed, the
 	// key material also contain the flag presence and the relay party ID in string format.
 	// This information are presented in the signature `content` after the R and S values of
 	// the actual signature. But they are encoded in `cbor` encoding. To finish this, we need

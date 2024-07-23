@@ -1,9 +1,9 @@
 
 [ table_id_object:
-00a6823403ea3055  eosio.token (code)
-454f530000000000  "EOS" symbol_code (scope)
+00a6823403ea3055  vex.token (code)
+454f530000000000  "VEX" symbol_code (scope)
 0000000000904dc6  stat (table name)
-00a6823403ea3055  eosio.token (payer?)
+00a6823403ea3055  vex.token (payer?)
 01000000          count ?
 ]
 
@@ -12,16 +12,16 @@
 ]
 
 [ key value object:
-454f530000000000  "EOS", primary key?
-00a6823403ea3055  eosio.token, payer ?
+454f530000000000  "VEX", primary key?
+00a6823403ea3055  vex.token, payer ?
 
 28                length=40 ?
 835fd1f546090000   uint64 = 10200376500099, amount 1,020,037,650.0099 ?!
-04454f5300000000  "4,EOS"
+04454f5300000000  "4,VEX"
 00407a10f35a0000   uint64 = 100000000000000, amount 10,000,000,000.0000
-04454f5300000000  "4,EOS"
-0000000000ea3055   eosio
-   `-> these last few fields seem to correspond to: https://eosq.app/account/eosio.token/tables?lowerBound=&scope=EOS&tableName=stat
+04454f5300000000  "4,VEX"
+0000000000ea3055   vexcore
+   `-> these last few fields seem to correspond to: https://eosq.app/account/vex.token/tables?lowerBound=&scope=EOS&tableName=stat
 ]
 
 
@@ -29,10 +29,10 @@
 00
 
 [ table_id_object:
-0000000000ea3055  "eosio"  (code)
-0000000000ea3055  "eosio"  (scope)
+0000000000ea3055  "vexcore"  (code)
+0000000000ea3055  "vexcore"  (scope)
 0000c80a5e23a5b9  "rammarket" name-encoded (table name)
-0000000000ea3055  "eosio" (payer)
+0000000000ea3055  "vexcore" (payer)
 01000000          count ? or size ? number of elements in table
 ]
 
@@ -42,7 +42,7 @@
 
 [ key value object:
 0452414d434f5245  "4,RAMCORE"  primary_key?
-0000000000ea3055  "eosio"  payer?
+0000000000ea3055  "vexcore"  payer?
 
 40                length=64 ? length of shared_blob
 
@@ -54,7 +54,7 @@
 000000000000e03f  float64 = 0.50000
 
 1f8274480d000000  uint64 = 57050169887, 5,705,016.9887
-04454f5300000000  "4,EOS"
+04454f5300000000  "4,VEX"
 000000000000e03f  float64 = 0.50000
    `-> looks like: https://eosq.app/account/eosio/tables?lowerBound=&scope=eosio&tableName=rammarket
 ]
@@ -62,14 +62,14 @@
 
 00000000
 00
-0000000000ea3055  "eosio" (code)
-0000000000ea3055  "eosio" (scope)
+0000000000ea3055  "vexcore" (code)
+0000000000ea3055  "vexcore" (scope)
 0000000044736864  "global" (table name)
-0000000000ea3055  "eosio" (payer)
+0000000000ea3055  "vexcore" (payer)
 01000000          elements counts
 01
 0000000044736864  "global" (prim key)
-0000000000ea3055  "eosio" (payer)
+0000000000ea3055  "vexcore" (payer)
 9a01              blob_size: 282?
 0000100000000000
 e803000000000800

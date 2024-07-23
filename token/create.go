@@ -4,10 +4,10 @@ import eos "github.com/genesisblockid/vex-go"
 
 func NewCreate(issuer eos.AccountName, maxSupply eos.Asset) *eos.Action {
 	return &eos.Action{
-		Account: AN("eosio.token"),
+		Account: AN("vex.token"),
 		Name:    ActN("create"),
 		Authorization: []eos.PermissionLevel{
-			{Actor: AN("eosio.token"), Permission: PN("active")},
+			{Actor: AN("vex.token"), Permission: PN("active")},
 		},
 		ActionData: eos.NewActionData(Create{
 			Issuer:        issuer,
@@ -16,7 +16,7 @@ func NewCreate(issuer eos.AccountName, maxSupply eos.Asset) *eos.Action {
 	}
 }
 
-// Create represents the `create` struct on the `eosio.token` contract.
+// Create represents the `create` struct on the `vex.token` contract.
 type Create struct {
 	Issuer        eos.AccountName `json:"issuer"`
 	MaximumSupply eos.Asset       `json:"maximum_supply"`

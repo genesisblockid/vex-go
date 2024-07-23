@@ -19,7 +19,7 @@ func ripemd160checksumHashCurve(in []byte, curve CurveID) []byte {
 	_, _ = h.Write(in) // this implementation has no error path
 
 	// FIXME: this seems to be only rolled out to the `SIG_` things..
-	// proper support for importing `EOS` keys isn't rolled out into `dawn4`.
+	// proper support for importing `VEX` keys isn't rolled out into `dawn4`.
 	_, _ = h.Write([]byte(curve.String())) // conditionally ?
 	sum := h.Sum(nil)
 	return sum[:4]

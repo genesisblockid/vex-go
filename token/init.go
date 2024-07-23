@@ -3,7 +3,7 @@ package token
 import eos "github.com/genesisblockid/vex-go"
 
 func init() {
-	eos.RegisterAction(AN("eosio.token"), ActN("transfer"), Transfer{})
-	eos.RegisterAction(AN("eosio.token"), ActN("issue"), Issue{})
-	eos.RegisterAction(AN("eosio.token"), ActN("create"), Create{})
+	eos.RegisterAction(AN("vex.token"), ActN("transfer"), Transfer{})
+	eos.RegisterAction(AN("vex.token"), ActN("issue"), Issue{})
+	eos.RegisterAction(AN("vex.token"), ActN("create"), Create{})
 }

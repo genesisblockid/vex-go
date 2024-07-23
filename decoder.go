@@ -17,7 +17,7 @@ import (
 )
 
 // UnmarshalerBinary is the interface implemented by types
-// that can unmarshal an EOSIO binary description of themselves.
+// that can unmarshal an vexcore binary description of themselves.
 //
 // **Warning** This is experimental, exposed only for internal usage for now.
 type UnmarshalerBinary interface {
