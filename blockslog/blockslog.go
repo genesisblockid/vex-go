@@ -8,7 +8,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/eoscanada/eos-go"
+	eos "github.com/genesisblockid/vex-go"
 )
 
 func Process(filename string) error {

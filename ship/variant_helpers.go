@@ -1,7 +1,7 @@
 package ship
 
 import (
-	"github.com/eoscanada/eos-go"
+	eos "github.com/genesisblockid/vex-go"
 )
 
 // Request

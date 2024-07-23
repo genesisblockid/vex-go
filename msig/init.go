@@ -1,7 +1,7 @@
 package msig
 
 import (
-	"github.com/eoscanada/eos-go"
+	eos "github.com/genesisblockid/vex-go"
 )
 
 func init() {

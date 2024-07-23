@@ -1,10 +1,10 @@
-package eos_test
+package vex_test
 
 import (
 	"encoding/json"
 	"fmt"
 
-	eos "github.com/eoscanada/eos-go"
+	eos "github.com/genesisblockid/vex-go"
 )
 
 func ExamplePackedTransaction_Unpack() {

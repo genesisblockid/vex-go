@@ -1,4 +1,4 @@
-package eos_test
+package vex_test
 
 import (
 	"fmt"

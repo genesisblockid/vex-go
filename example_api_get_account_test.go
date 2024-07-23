@@ -1,11 +1,11 @@
-package eos_test
+package vex_test
 
 import (
 	"context"
 	"encoding/json"
 	"fmt"
 
-	eos "github.com/eoscanada/eos-go"
+	eos "github.com/genesisblockid/vex-go"
 )
 
 func ExampleAPI_GetAccount() {

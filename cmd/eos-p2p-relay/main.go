@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/eoscanada/eos-go/p2p"
+	"github.com/genesisblockid/vex-go/p2p"
 	"github.com/streamingfast/logging"
 	"go.uber.org/zap/zapcore"
 )

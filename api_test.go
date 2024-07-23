@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"context"
@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	mockserver "github.com/eoscanada/eos-go/testdata/mock_server"
+	mockserver "github.com/genesisblockid/vex-go/testdata/mock_server"
 	"github.com/stretchr/testify/assert"
 )
 

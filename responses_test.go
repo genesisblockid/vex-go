@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"encoding/hex"
@@ -8,7 +8,7 @@ import (
 
 	"encoding/json"
 
-	"github.com/eoscanada/eos-go/ecc"
+	"github.com/genesisblockid/vex-go/ecc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

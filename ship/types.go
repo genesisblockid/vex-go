@@ -1,8 +1,8 @@
 package ship
 
 import (
-	"github.com/eoscanada/eos-go"
-	"github.com/eoscanada/eos-go/ecc"
+	eos "github.com/genesisblockid/vex-go"
+	"github.com/genesisblockid/vex-go/ecc"
 )
 
 // State History Plugin Requests

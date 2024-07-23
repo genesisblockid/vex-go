@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"encoding/hex"
@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/eoscanada/eos-go/ecc"
+	"github.com/genesisblockid/vex-go/ecc"
 )
 
 /*

@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"encoding/base64"
@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eoscanada/eos-go/ecc"
+	"github.com/genesisblockid/vex-go/ecc"
 	"github.com/tidwall/gjson"
 )
 

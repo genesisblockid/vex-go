@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/eoscanada/eos-go/btcsuite/btcd/btcec"
-	"github.com/eoscanada/eos-go/btcsuite/btcutil/base58"
+	"github.com/genesisblockid/vex-go/btcsuite/btcd/btcec"
+	"github.com/genesisblockid/vex-go/btcsuite/btcutil/base58"
 )
 
 var PublicKeyPrefix = "PUB_"

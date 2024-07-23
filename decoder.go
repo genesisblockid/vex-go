@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"encoding/binary"
@@ -12,7 +12,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/eoscanada/eos-go/ecc"
+	"github.com/genesisblockid/vex-go/ecc"
 	"go.uber.org/zap"
 )
 

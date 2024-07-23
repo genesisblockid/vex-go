@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"bytes"
@@ -12,7 +12,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/eoscanada/eos-go/ecc"
+	"github.com/genesisblockid/vex-go/ecc"
 	"go.uber.org/zap"
 )
 

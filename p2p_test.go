@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"bytes"
@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/eoscanada/eos-go/ecc"
+	"github.com/genesisblockid/vex-go/ecc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -451,8 +451,8 @@ func FixmeTestPackedTransaction_Unpack(t *testing.T) {
 }
 
 func unifiedDiff(t *testing.T, expectedContent, actualContent []byte) string {
-	file1 := "/tmp/eos-go-tests-expected"
-	file2 := "/tmp/eos-go-tests-actual"
+	file1 := "/tmp/vex-go-tests-expected"
+	file2 := "/tmp/vex-go-tests-actual"
 	err := ioutil.WriteFile(file1, prettifyJSON(expectedContent), 0600)
 	require.NoError(t, err)
 

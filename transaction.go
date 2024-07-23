@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"bytes"
@@ -17,7 +17,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/eoscanada/eos-go/ecc"
+	"github.com/genesisblockid/vex-go/ecc"
 )
 
 type TransactionHeader struct {

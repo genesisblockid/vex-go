@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/eoscanada/eos-go"
+	eos "github.com/genesisblockid/vex-go"
 )
 
 type TableIDObject struct {

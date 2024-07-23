@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"go.uber.org/zap"
 )
 
-var zlog, tracer = logging.PackageLogger("eos-go", "github.com/eoscanada/eos-go")
+var zlog, tracer = logging.PackageLogger("vex-go", "github.com/genesisblockid/vex-go")
 
 type logStringerFunc func() string
 

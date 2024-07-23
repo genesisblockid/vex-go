@@ -3,6 +3,7 @@ module github.com/genesisblockid/vex-go
 go 1.17
 
 require (
+	github.com/genesisblockid/vex-go v0.10.2
 	github.com/jarcoal/httpmock v1.2.0
 	github.com/pkg/errors v0.9.1
 	github.com/streamingfast/logging v0.0.0-20221209193439-bff11742bf4c

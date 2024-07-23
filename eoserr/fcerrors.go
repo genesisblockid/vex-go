@@ -1,4 +1,4 @@
-package eoserr
+package vexerr
 
 import "fmt"
 

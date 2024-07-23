@@ -1,4 +1,4 @@
-package eos
+package vex
 
 import (
 	"bytes"
@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eoscanada/eos-go/ecc"
+	"github.com/genesisblockid/vex-go/ecc"
 )
 
 type API struct {

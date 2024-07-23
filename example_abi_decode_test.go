@@ -1,11 +1,11 @@
-package eos_test
+package vex_test
 
 import (
 	"encoding/hex"
 	"fmt"
 	"strings"
 
-	eos "github.com/eoscanada/eos-go"
+	eos "github.com/genesisblockid/vex-go"
 )
 
 func ExampleABI_DecodeTableRowTyped() {

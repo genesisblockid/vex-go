@@ -6,7 +6,7 @@ import (
 	"github.com/streamingfast/logging"
 )
 
-var zlog, _ = logging.PackageLogger("eos-go", "github.com/eoscanada/eos-go/p2p")
+var zlog, _ = logging.PackageLogger("vex-go", "github.com/genesisblockid/vex-go/p2p")
 
 // SyncLogger sync logger, should `defer SyncLogger()` when use p2p package
 func SyncLogger() {
