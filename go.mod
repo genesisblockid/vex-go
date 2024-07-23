@@ -1,4 +1,4 @@
-module github.com/eoscanada/eos-go
+module github.com/genesisblockid/vex-go
 
 go 1.17
 
