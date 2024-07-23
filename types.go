@@ -447,7 +447,7 @@ func (sc SymbolCode) MarshalJSON() (data []byte, err error) {
 
 // EOSSymbol represents the standard EOS symbol on the chain.  It's
 // here just to speed up things.
-var EOSSymbol = Symbol{Precision: 4, Symbol: "EOS"}
+var EOSSymbol = Symbol{Precision: 4, Symbol: "VEX"}
 
 // REXSymbol represents the standard REX symbol on the chain.  It's
 // here just to speed up things.
